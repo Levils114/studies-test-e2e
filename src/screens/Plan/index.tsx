@@ -58,6 +58,7 @@ export function Plan() {
         <Input
           placeholder="your email"
           testID="input-email"
+          keyboardType="email-address"
         />
 
         {

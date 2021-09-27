@@ -4,7 +4,10 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "web": "expo start --web",
-    "start": "react-native start"
+    "start": "react-native start",
+    "dev": "expo start",
+    "testBuild": "detox build -c android.emu.debug",
+    "test": "detox test -c android.emu.debug"
   },
   "dependencies": {
     "expo": "~42.0.1",
@@ -24,6 +27,8 @@
     "@babel/core": "^7.9.0",
     "@types/react": "~16.9.35",
     "@types/react-native": "~0.63.2",
+    "detox": "^18.21.0",
+    "jest": "^27.2.2",
     "typescript": "~4.0.0"
   },
   "private": true
